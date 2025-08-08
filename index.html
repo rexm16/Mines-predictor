@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signal RNG Mines Predictor - Homepage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      font-family: 'Orbitron', 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 50px 20px;
+      line-height: 1.65;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #fbc531, #e84118, #0097e6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(251, 197, 49, 0.7);
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 6px rgba(238, 9, 121, 0.8);
+    }
+
+    p {
+      max-width: 720px;
+      font-size: 1.25rem;
+      color: #b2ebf2;
+      text-shadow: 0 0 6px rgba(0, 255, 255, 0.2);
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      color: #ff4757;
+      font-weight: 700;
+      text-shadow: 0 0 8px #ff6b81;
+    }
+
+    ul {
+      max-width: 420px;
+      margin: 20px auto 40px;
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    ul li {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 20px;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: #ffd32a;
+      box-shadow:
+        0 0 5px #ffd32a,
+        inset 0 0 8px #ff9f1a;
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+
+    ul li:hover {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow:
+        0 0 12px #ffd32a,
+        inset 0 0 12px #ff9f1a;
+      color: #fff;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 40px;
+      background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+      color: #fff;
+      padding: 18px 42px;
+      font-size: 1.35rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow:
+        0 0 20px #f64f59,
+        0 0 40px #c471ed;
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+      letter-spacing: 1.5px;
+    }
+
+    a.button:hover {
+      background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);
+      box-shadow:
+        0 0 30px #12c2e9,
+        0 0 60px #c471ed;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 25px 10px 10px;
+      font-size: 1rem;
+      color: #66fcf1;
+      letter-spacing: 1px;
+      text-shadow: 0 0 4px #66fcf1;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      p, ul li {
+        font-size: 1rem;
+      }
+      a.button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Signal RNG Mines Predictor</h1>
+  <p>
+    Welcome to the homepage of the <span class="highlight">Signal RNG Mines Predictor</span> — a dynamic tool designed to predict and reveal hidden safe spots (“stars”) and avoid the dangerous “bombs” using secure random number generation.
+  </p>
+
+  <h2>What is Signal RNG Mines Predictor?</h2>
+  <p>
+    This interactive predictor presents a grid-based challenge where 4 hidden stars are randomly placed among bombs. It leverages cryptographically strong randomness to ensure fairness and unpredictability in every new setup.
+  </p>
+
+  <h2>How Does It Work?</h2>
+  <p>
+    When you activate the predictor, the grid of 25 cells is populated, and the stars are randomly assigned. The “Reveal Signal” button automatically uncovers all safe spots, giving you insight into the pattern and helping you strategize.
+  </p>
+
+  <h2>Interactive Features</h2>
+  <p>
+    You can manually click cells to reveal stars or bombs and keep track of your wins and losses using the intuitive counters. This adds a fun, game-like element to exploring randomness.
+  </p>
+
+  <h2>Why Use This Predictor?</h2>
+  <ul>
+    <li>⭐ Learn about random number generation with a practical example.</li>
+    <li>⭐ Improve strategic decision-making in games of chance.</li>
+    <li>⭐ Explore basic interactive UI design and game mechanics.</li>
+  </ul>
+
+  <a href="subscribe.html" class="button" target="_blank" rel="noopener noreferrer">
+    Buy the Bot for $10 Lifetime
+  </a>
+
+  <footer>
+    &copy; 2025 Signal RNG Mines Predictor. Crafted with passion and code.
+  </footer>
+</body>
+</html>

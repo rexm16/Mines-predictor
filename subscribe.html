@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <title>Subscribe - Signal RNG Mines Predictor</title>
+  <style>
+    body {
+      background: #0b0c10;
+      color: #66fcf1;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .payment-info {
+      background: #1f2833;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 0 15px #45a29e;
+      width: 100%;
+    }
+    .wallet {
+      margin: 15px 0;
+      font-size: 18px;
+      position: relative;
+      user-select: text;
+    }
+    .copy-btn {
+      background: #45a29e;
+      border: none;
+      color: #0b0c10;
+      padding: 6px 12px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+    .copy-btn:hover {
+      background: #66fcf1;
+    }
+    .proof-btn {
+      background: #45a29e;
+      border: none;
+      color: #0b0c10;
+      padding: 14px 30px;
+      margin-top: 30px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 12px #45a29e;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .proof-btn:hover {
+      background: #66fcf1;
+      box-shadow: 0 0 18px #66fcf1;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #fbc531, #e84118, #0097e6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(251, 197, 49, 0.7);
+      letter-spacing: 2px;
+    }
+    p {
+      max-width: 480px;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      color: #a0d8ef;
+      text-shadow: 0 0 6px rgba(0, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>Subscribe to Signal RNG Mines Predictor</h1>
+  <p>Pay <strong>$10 lifetime</strong> to get full access to the Signal RNG Mines Predictor bot.</p>
+  ⚠️ This bot only gives 80% chance of winning, therefore do not rely on it.
+
+  <div class="payment-info">
+    <div class="wallet">
+      <strong>BTC Address (Trust Wallet):</strong><br />
+      <span id="btcAddress">bc1qpsg0macrxxnvl5cd4t2nqp2yt95a0jem6s2242</span>
+      <button class="copy-btn" onclick="copyText('btcAddress')">Copy</button>
+    </div>
+
+    <div class="wallet">
+      <strong>USDT Address (Trust Wallet):</strong><br />
+      <span id="usdtAddress">0x43ac865458540f19ff86f2fc985269d4493dcf3a</span>
+      <button class="copy-btn" onclick="copyText('usdtAddress')">Copy</button>
+    </div>
+
+    <div class="wallet" id="momoDetails">
+      <strong>Mobile Money (MTN Ghana):</strong><br />
+      Name: <span id="momoName">Patricia Asiedu</span>
+      <button class="copy-btn" onclick="copyText('momoName')">Copy</button><br />
+      Number: <span id="momoNumber">0534494604</span>
+      <button class="copy-btn" onclick="copyText('momoNumber')">Copy</button>
+    </div>
+  </div>
+
+  <p>After payment, send your payment proof to admin for activation.</p>
+  
+
+  <a href="mailto:lxwinprediction@gmail.com?subject=Payment%20Proof%20-%20Signal%20RNG%20Mines%20Predictor&body=Hello%2C%0A%0AI%20have%20made%20the%20payment.%20Please%20find%20the%20proof%20attached.%0A%0AThank%20you." 
+    class="proof-btn" target="_blank" rel="noopener noreferrer">
+    Send Payment Proof
+  </a>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(() => {
+        alert('Failed to copy. Please copy manually.');
+      });
+    }
+  </script>
+</body>
+</html>
